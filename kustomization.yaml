@@ -24,3 +24,10 @@ patches:
   target:
     kind: Deployment
     name: client
+- patch: |-
+    - op: add
+      path: "/metadata/labels/odf-dr-protection"
+      value: "enabled"
+  target:
+    kind: PersistentVolumeClaim
+    name: productdb
