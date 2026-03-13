@@ -5,9 +5,9 @@ resources:
 
 replicas:
 - name: server
-  count: 2
+  count: 1
 - name: client
-  count: 2
+  count: 1
 
 # patches:
 # - patch: |-
