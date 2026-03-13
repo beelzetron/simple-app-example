@@ -25,5 +25,8 @@ patches:
     kind: Deployment
     name: client
 
-commonLabels:
-  odf-dr-protection: enabled
+labels:
+  - includeSelectors: false
+    includeTemplates: true
+    pairs:
+      odf-dr-protection: enabled
